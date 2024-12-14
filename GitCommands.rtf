@@ -5,24 +5,9 @@
 \margl1440\margr1440\vieww14400\viewh15080\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs32 \cf0 #Connecting local machine with GitHub key generation\
-\pard\pardeftab720\partightenfactor0
-
-\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs32 \cf0 \cb1 \kerning1\expnd0\expndtw0 Ssh-keygen\
-\
-\
-# Start with configure\
+\f0\fs32 \cf0 # Start with configure\
 git config \'97global user.name \'93Meftah\'94\
 git config \'97global user.email \'93meftahdm@gmail.com\'94\
-\
-\
-# See the status (good practice to see it all the time)\
-git status\
-git log # to see all commit history\
 \
 \
 # Initialize a git command to work in\
@@ -39,13 +24,19 @@ git commit -m \'93<add any message of your own>\'94\
 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 # Create a new branch\
+\cf0 \
+# See the status (good practice to see it all the time)\
+git status\
+git log # to see all commit history\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+# Create a new branch\
 git branch <name>\
 git checkout <branch name> # switching to branch\
 git checkout -b <branch name> # It will create and switch to new branch\
 git branch -d <branch name> # deleting a branch\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \
+\
 \
 # Downloading from GitHub to local when the files are not at local machine\
 git clone <github ssh url from the repo you wants>\
@@ -72,7 +63,17 @@ git reset \'97hard <commit number> # Undo and remove a commit and go back to pas
  # To see all folder including hidden\
 ls -la (windows),or la (Mac)\
 \
-\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 #Connecting local machine with GitHub key generation\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \cb1 \kerning1\expnd0\expndtw0 Ssh-keygen\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
 \
 \
 \
